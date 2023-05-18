@@ -2,13 +2,13 @@
 {% extends 'base.html' %}
 {% load static %}
   {% block title %}
-  <title>{{ post.title }} - Blog Details</title>
+    <title>{{ post.title }} - Blog Details</title>
   {% endblock %}
 {%block banner %}
   <h1>Blog details</h1>
   <h4><a style="color: #fff;" href="{% url 'index' %}">Home</a>-Blog Details</h4>
 {% endblock %}
-  {% block content %}
+{% block content %}
     <!--================ Start Blog Post Area =================-->
     <section class="blog-post-area section-margin">
       <div class="container">
@@ -93,4 +93,4 @@
     </section>
   <!--================ End Blog Post Area =================-->
   </main>
-  {% endblock %}
+{% endblock %}
